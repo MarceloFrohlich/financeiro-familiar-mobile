@@ -4,7 +4,7 @@ import { storage } from './storage';
 export const API_URL =
   (Constants.expoConfig?.extra?.apiUrl as string) ||
   process.env.EXPO_PUBLIC_API_URL ||
-  'http://localhost:3001/api';
+  'https://financeiro-backend-production-58dd.up.railway.app/api';
 
 export class ApiError extends Error {
   constructor(public status: number, message: string, public data?: any) {
