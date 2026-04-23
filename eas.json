@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 10.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "SEU_APPLE_ID@email.com",
+        "ascAppId": "SEU_APP_STORE_CONNECT_APP_ID",
+        "appleTeamId": "SEU_TEAM_ID"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./google-play-key.json",
+        "track": "production"
+      }
+    }
+  }
+}

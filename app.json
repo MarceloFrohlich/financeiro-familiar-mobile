@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Financeiro Familiar",
+    "slug": "financeiro-familiar",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#172439"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.marcelofrohlich.financeiroFamiliar",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Necessário para escanear QR Codes de notas fiscais."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#172439"
+      },
+      "package": "com.marcelofrohlich.financeiroFamiliar",
+      "versionCode": 1,
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Necessário para escanear QR Codes de notas fiscais."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {}
+  }
+}
